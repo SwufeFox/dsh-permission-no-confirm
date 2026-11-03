@@ -1,0 +1,10 @@
+# Replace the shipped permission picker with this bundle's modal-free fork.
+#
+# `ui-permission` is the shipped client row (`@deepseek-ai/dsh-client-ui-permission-presets`).
+# Disabling it drops its browser module from the boot graph; the inserted row below
+# serves `lib/client.js`, the same permission surfaces with the risk gate removed.
+- id: ui-permission
+  disabled: true
+- insert:
+    - id: permission-no-confirm
+      name: 'dsh-permission-no-confirm'

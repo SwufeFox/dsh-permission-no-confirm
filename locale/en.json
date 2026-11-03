@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Permission Switch Without Confirmation",
+    "description": "Switches the current session's permission mode and the new-session default immediately, with no Full access / Auto review risk-confirmation dialog."
+  }
+}
